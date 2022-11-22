@@ -1,0 +1,22 @@
+.pictures-work {
+    display: flex;
+    gap: 30px;
+}
+
+.pictures {
+    width: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.pictures:hover .text {
+    transform: translateY(0%);
+}
+
+.list-pictures {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}

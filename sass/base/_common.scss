@@ -1,0 +1,16 @@
+
+body {
+    background-color: var(--main-white);
+    color: var(--main-text);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}

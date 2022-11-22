@@ -1,0 +1,64 @@
+.contact-link {
+    color: var(--main-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contact-icon {
+    fill: currentColor;
+}
+
+.contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.google-contact {
+    color: var(--main-white);
+    text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contact {
+    margin-bottom: 9px;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding-bottom: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}

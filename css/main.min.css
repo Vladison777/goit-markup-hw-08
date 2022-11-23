@@ -229,7 +229,6 @@ img {
     }
 }
 
-
 .hero-title {
     color: var(--main-white);
     width: 696px;
@@ -921,6 +920,25 @@ img {
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(0);
 
+}
+
+@media screen and (min-width: 480px) {
+    .modal {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        height: 581px;
+        width: 528px;
+    }
 }
 
 .modal-close {

@@ -36,9 +36,25 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }
 
+ @media screen and (min-width:480px) {
+    .container{
+        width: 480px;
+    } 
+ }
+
+ @media screen and (min-width:768px) {
+    .container {
+        width: 768px;
+    }
+ }
+
+ @media screen and (min-width:1200px) {
+    .container {
+        width: 1200px;
+    }
+ }
 p,
 h1,
 h2,
@@ -195,6 +211,24 @@ img {
     margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+    .section {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .section{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section{
+        width: 1200px;
+    }
+}
+
 
 .hero-title {
     color: var(--main-white);
@@ -240,6 +274,8 @@ img {
     position: relative;
 }
 
+
+
 .work-text {
     position: absolute;
     display: inline-block;
@@ -273,15 +309,34 @@ img {
 .description {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .peculiarity {
     width: 270px;
 }
 
+@media screen and (max-width: 480px) {
+    .peculiarity:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+ @media screen and (min-width:768px) {
+    .peculiarity{
+        width: calc((100% - 30px) / 2);
+    }
+ }
+
+ @media screen and (min-width:1200px) {
+    .peculiarity{
+        width: calc((100% - 90px) / 4);
+    } 
+ }
+
 .content {
     height: 120px;
-    outline: 1px solid red;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -315,8 +370,14 @@ img {
 .pictures-work {
     display: flex;
     gap: 30px;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .pictures-work{
+        flex-direction: row;
+    }
 }
 
 
@@ -324,31 +385,6 @@ img {
     background-color: var(--section-team);
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-@media screen and (min-width: 480px) {
-    .container {
-        width: 480px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and(min-width:1200px) {
-    .container{
-        width: 1200px;
-    }
-}
-
-@media screen and (min-width:768px){
-    .team{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 }
 
 .section-title {
@@ -361,17 +397,18 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width:768px) {
-    .item {
-        width: calc((100%-30px)/2);
+ @media screen and (min-width:768px) {
+    .item{
+        width: calc((100% - 30px) / 2);
     }
-}
+    
+ }
 
-@media screen and(min-width:1200px) {
+@media screen and (min-width:1200px) {
     .item {
-        width: calc((100%-90px)/4);
+        width: calc((100% - 90px) / 4);
     }
-}
+} 
 
 
 
@@ -453,11 +490,37 @@ img {
 .caption {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
+ @media screen and (min-width:768px) {
+    .caption{
+        flex-direction: row;
+    }
+ }
+
 .picture {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px)/2);
     height: 92px;
+}
+
+@media screen and (min-width:480px) {
+    .picture{
+        width: calc((100% - 30px) / 2);
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .picture{
+    width: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .picture {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 

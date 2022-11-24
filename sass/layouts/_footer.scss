@@ -9,6 +9,24 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+        .container-one {
+            min-width: 480px;
+        }
+    }
+    
+        @media screen and (min-width: 768px) {
+        .container-one {
+            min-width: 768px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .container-one {
+            min-width: 1200px;
+        }
+    }
 }
 
 .link-footer {

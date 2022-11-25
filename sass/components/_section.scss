@@ -11,19 +11,36 @@
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
-}
 
-
-
-
-.about{
-    @media screen and (max-width:767px) {
-        display: none;
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
 .about {
     padding-top: 94px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
+}
+
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.work{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .picture-text {
@@ -180,6 +197,16 @@
     padding-bottom: 94px;
     padding-top: 94px;
     cursor: pointer;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.client{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .caption {

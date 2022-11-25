@@ -94,6 +94,16 @@ img {
     align-items: center;
 }
 
+.head {
+    justify-content: space-between;
+}
+
+@media screen and (min-width:768px) {
+    .head{
+        height: 80px;
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -110,6 +120,15 @@ img {
     align-items: center;
     margin-left: auto;
     gap: 50px;
+}
+
+@media screen and (min-width:768px) {
+    .contact-list{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .page-header {
@@ -211,6 +230,19 @@ img {
     margin-left: auto;
 }
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+ @media screen and (min-width:1200px) {
+    .section{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    } 
+ }
+
+
 .hero-title {
     color: var(--main-white);
     width: 696px;
@@ -224,6 +256,21 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+ @media screen and (min-width:360px) {
+    .hero-title{
+        max-width: 360px;
+    }
+    
+ }
+
+ @media screen and (min-width:1200px) {
+    .hero-title{
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    } 
+ }
 
 .button {
     color: var(--main-white);
@@ -246,14 +293,32 @@ img {
     margin: auto;
 }
 
-@media screen and (max-width:767px) {
-    .about{
-        display: none;
-    }  
+.about {
+    padding-top: 94px;
 }
 
 .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width:1200px) {
+    .about{
+        padding-top: 94px;
+        padding-bottom: 0;
+    } 
+}
+
+.work{
     padding-top: 94px;
+    padding-bottom: 94px;
+    display: none;
+}
+
+@media screen and (min-width:1200) {
+    .work{
+        display: block;
+    }
 }
 
 .picture-text {
@@ -380,6 +445,19 @@ img {
     padding-bottom: 94px;
 }
 
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width:1200px) {
+    .team{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+
 .section-title {
     margin-bottom: 50px;
 }
@@ -480,6 +558,19 @@ img {
     cursor: pointer;
 }
 
+@media screen and (min-width:1200px) {
+    .client{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+   
+}
+
+.client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .caption {
     display: flex;
     gap: 30px;
@@ -565,7 +656,9 @@ img {
 .container-one {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -848,6 +941,9 @@ img {
 .footer-aside {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-input-aside {

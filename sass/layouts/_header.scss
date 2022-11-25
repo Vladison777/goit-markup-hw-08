@@ -3,19 +3,18 @@
     align-items: center;
 }
 
-
-
-
-
 .page-header {
     padding: 25px 0px;
     border-bottom: 1px solid var(--portfolio-header);
 }
 
+.head{
+    justify-content: space-between;
 
-
-
-
+    @media screen and (min-width:768px) {
+        height: 80px;
+    }
+}
 
 .current {
     color: var(--accent-color);

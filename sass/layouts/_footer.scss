@@ -8,7 +8,9 @@
 .container-one {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
 
     @media screen and (min-width: 480px) {
         .container-one {

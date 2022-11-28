@@ -19,11 +19,16 @@
     transition-duration: 250ms;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 32px;
+    padding: 32px 0;
+    display: block;
 
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 32px 0;
     }
 }
 

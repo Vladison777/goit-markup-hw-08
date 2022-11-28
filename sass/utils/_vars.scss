@@ -1,11 +1,15 @@
 :root {
-    --main-text: #757575;
-    --accent-color: #2196F3;
-    --logo-black-color: #000000;
-    --secondary-text: #212121;
-    --main-section: #2F303A;
-    --main-white: #FFFFFF;
-    --section-team: #F5F4FA;
-    --portfolio-header: #ECECEC;
-    --icon-gray-fill: #AFB1B8;
+  --main-text: #757575;
+  --accent-color: #2196f3;
+  --logo-black-color: #000000;
+  --secondary-text: #212121;
+  --main-section: #2f303a;
+  --main-white: #ffffff;
+  --section-team: #f5f4fa;
+  --portfolio-header: #ececec;
+  --icon-gray-fill: #afb1b8;
 }
+
+$mobile: 480px;
+$tablet: 768px;
+$descktop: 1200px;

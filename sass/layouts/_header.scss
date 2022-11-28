@@ -1,23 +1,30 @@
 .page-header .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .page-header {
-    border-bottom: 1px solid var(--portfolio-header);
+  border-bottom: 1px solid var(--portfolio-header);
+  padding: 14px 0;
+
+  @media screen and(min-width:$tablet) {
+    padding: 0;
+  }
 }
 
-.head{
-    justify-content: space-between;
+.head {
+  justify-content: space-between;
 }
 
 .current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
+.burger-btn {
+  background-color: transparent;
+  border: none;
 
-
-
-
-
-
+  @media screen and(min-width:$tablet) {
+    display: none;
+  }
+}
